@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/add_owner"
+            android:icon="@drawable/ic_add_black_24dp"
+            android:title="@string/menu_add_owner" />
+        <item
+            android:id="@+id/view_owner_detail"
+            android:icon="@drawable/ic_folder_shared_black_24dp"
+            android:title="View Owner Detail" />
+        <item
+            android:id="@+id/view_owner_balance"
+            android:icon="@drawable/ic_balance_wallet_black_24dp"
+            android:title="View Owner Balance" />
+        <item
+            android:id="@+id/view_transaction"
+            android:icon="@drawable/transaction"
+            android:title="View All Transaction" />
+    </group>
+
+    <item android:title="Communicate">
+        <menu>
+            <item
+                android:id="@+id/nav_share"
+                android:icon="@drawable/ic_menu_share"
+                android:title="@string/menu_share" />
+            <item
+                android:id="@+id/about"
+                android:icon="@drawable/ic_info_black_24dp"
+                android:title="About" />
+        </menu>
+    </item>
+
+    <item android:title="Version 1.0.0">
+        <menu>
+            <item
+                android:id="@+id/signOut"
+                android:icon="@drawable/ic_sign_out_black_24dp"
+                android:title="Sign Out" />
+        </menu>
+    </item>
+
+</menu>
+
+

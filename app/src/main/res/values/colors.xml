@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#ff1744</color>
+    <color name="colorPrimaryDark">#000000</color>
+    <color name="colorAccent">#ff1744</color>
+    <color name="colorPrimary_Light">#344955</color>
+    <color name="colorPrimaryDark_Light">#232F34</color>
+    <color name="colorAccent_Light">#344955</color>
+    <color name="drawable">#9e9e9e</color>
+    <color name="mainActionbar">#FFFFFF</color>
+    <color name="actionbarColor">#344955</color>
+</resources>

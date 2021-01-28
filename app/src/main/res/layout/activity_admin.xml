@@ -1,0 +1,291 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".admin"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:id="@+id/adminll1">
+
+        <com.google.android.material.textfield.TextInputLayout
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:id="@+id/signup_input_layout_name1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="140dp"
+            android:layout_marginRight="20dp">
+
+            <EditText
+                android:id="@+id/adminet1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableStart="@drawable/ic_flat_black_24dp"
+                android:drawableLeft="@drawable/ic_flat_black_24dp"
+                android:drawablePadding="10dp"
+                android:ems="10"
+                android:hint="Apartment Name"
+                android:textSize="24sp" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:id="@+id/signup_input_layout_password1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="20dp">
+
+            <EditText
+                android:id="@+id/adminet2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@drawable/ic_password_black_24dp"
+                android:drawablePadding="10dp"
+                android:ems="10"
+                android:hint="Password for Admin"
+                android:inputType="textPassword"
+                android:password="true"
+                android:textSize="24sp" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <Button
+            android:id="@+id/adminbtn1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="70dp"
+            android:paddingLeft="50dp"
+            android:paddingTop="6dp"
+            android:paddingRight="50dp"
+            android:paddingBottom="6dp"
+            android:text="Log In"
+            android:textSize="@dimen/font_edit_add_more" />
+
+        <Button
+            android:id="@+id/adminbtn2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="30dp"
+            android:paddingLeft="50dp"
+            android:paddingTop="6dp"
+            android:paddingRight="50dp"
+            android:paddingBottom="6dp"
+            android:text="Sign Up"
+            android:textSize="@dimen/font_edit_add_more" />
+
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/adminll2"
+        android:visibility="gone">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_margin="10dp">
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/signup_input_layout_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp">
+
+                <EditText
+                    android:id="@+id/name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:drawableStart="@drawable/ic_flat_black_24dp"
+                    android:drawableLeft="@drawable/ic_flat_black_24dp"
+                    android:drawablePadding="10dp"
+                    android:ems="10"
+                    android:hint="Apartment Name"
+                    android:textSize="@dimen/font_edit_add_more" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/signup_input_layout_name_admin"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp">
+
+                <EditText
+                    android:id="@+id/admin_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:drawableLeft="@drawable/ic_person_black_24dp"
+                    android:drawablePadding="10dp"
+                    android:ems="10"
+                    android:hint="Admin Name"
+                    android:textSize="@dimen/font_edit_add_more" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/signup_input_layout_password"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp">
+
+                <EditText
+                    android:id="@+id/passsword"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:drawableLeft="@drawable/ic_password_black_24dp"
+                    android:drawablePadding="10dp"
+                    android:ems="10"
+                    android:hint="Admin Password"
+                    android:inputType="textPassword"
+                    android:password="true"
+                    android:textSize="@dimen/font_edit_add_more" />
+            </com.google.android.material.textfield.TextInputLayout>
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/signup_input_layout_pin"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp">
+
+                <EditText
+                    android:id="@+id/pin"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:drawableLeft="@drawable/ic_password_black_24dp"
+                    android:drawablePadding="10dp"
+                    android:ems="10"
+                    android:hint="Member Pin"
+                    android:inputType="numberPassword"
+                    android:numeric="integer"
+                    android:password="true"
+                    android:textSize="@dimen/font_edit_add_more" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <!--<LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">-->
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/signup_input_layout_wings"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="10dp">
+
+                    <EditText
+                        android:id="@+id/wings"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:ems="10"
+                        android:hint="No. of Wings"
+                        android:numeric="integer"
+                        android:singleLine="true"
+                        android:textSize="@dimen/font_edit_add_more" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/signup_input_layout_units"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="10dp">
+
+                    <EditText
+                        android:id="@+id/units"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:ems="10"
+                        android:hint="No. of Flats per Wing"
+                        android:numeric="integer"
+                        android:singleLine="true"
+                        android:textSize="@dimen/font_edit_add_more" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+            <!--</LinearLayout>-->
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/signup_input_layout_mobile"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp">
+
+                <EditText
+                    android:id="@+id/mobile"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:drawableLeft="@drawable/ic_phone_black_24dp"
+                    android:drawablePadding="10dp"
+                    android:ems="10"
+                    android:hint="Mobile Number"
+                    android:numeric="integer"
+                    android:singleLine="true"
+                    android:textSize="@dimen/font_edit_add_more" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/signup_input_layout_address"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp">
+
+                <EditText
+                    android:id="@+id/address"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:drawableLeft="@drawable/ic_location_on_black_24dp"
+                    android:drawablePadding="10dp"
+                    android:ems="10"
+                    android:hint="Address"
+                    android:singleLine="false"
+                    android:textSize="@dimen/font_edit_add_more" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <Button
+                android:id="@+id/signupbtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="40dp"
+                android:paddingLeft="50dp"
+                android:paddingTop="6dp"
+                android:paddingRight="50dp"
+                android:paddingBottom="6dp"
+                android:text="Sign Up"
+                android:textSize="@dimen/font_edit_add_more" />
+
+
+        </LinearLayout>
+
+
+    </ScrollView>
+
+    <ProgressBar
+        android:id="@+id/adminpb"
+        android:layout_width="100dp"
+        android:layout_height="120dp"
+        android:layout_centerInParent="true"
+        android:visibility="gone"/>
+
+</RelativeLayout>
+

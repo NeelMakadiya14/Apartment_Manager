@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:id="@+id/menu1_scroll">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp">
+
+                <EditText
+                    android:id="@+id/menu2_date"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:drawableLeft="@drawable/calendar_today"
+                    android:drawablePadding="10dp"
+                    android:ems="10"
+                    android:hint="Date "
+                    android:textSize="@dimen/font_edit_add_more" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:id="@+id/depositll">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="10dp">
+
+                        <EditText
+                            android:id="@+id/menu2_wing"
+                            android:layout_width="190dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:drawableLeft="@drawable/ic_wing_black_24dp"
+                            android:drawablePadding="10dp"
+                            android:ems="10"
+                            android:hint="wing *"
+                            android:singleLine="true"
+                            android:textSize="@dimen/font_edit_add_more" />
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="10dp">
+
+                        <EditText
+                            android:id="@+id/menu2_block"
+                            android:layout_width="190dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:layout_weight="1"
+                            android:drawableLeft="@drawable/ic_location_on_black_24dp"
+                            android:drawablePadding="10dp"
+                            android:ems="10"
+                            android:hint="Block Number *"
+                            android:numeric="integer"
+                            android:singleLine="true"
+                            android:textSize="@dimen/font_edit_add_more" />
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                </LinearLayout>
+
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="10dp">
+
+                    <EditText
+                        android:id="@+id/menu2_name"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:drawableLeft="@drawable/ic_person_black_24dp"
+                        android:drawablePadding="10dp"
+                        android:ems="10"
+                        android:hint="Owner Name "
+                        android:textSize="@dimen/font_edit_add_more" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="10dp">
+
+                    <EditText
+                        android:id="@+id/menu2_mobile"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:drawableLeft="@drawable/ic_phone_black_24dp"
+                        android:drawablePadding="10dp"
+                        android:ems="10"
+                        android:hint="Mobile Number "
+                        android:numeric="integer"
+                        android:singleLine="true"
+                        android:textSize="@dimen/font_edit_add_more" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+            </LinearLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp">
+
+                <EditText
+                    android:id="@+id/menu2_amount"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:drawableLeft="@drawable/currency_inr"
+                    android:drawablePadding="10dp"
+                    android:ems="10"
+                    android:hint="Deposit Amount"
+                    android:numeric="integer"
+                    android:singleLine="true"
+                    android:textSize="@dimen/font_edit_add_more" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp">
+
+                <EditText
+                    android:id="@+id/menu2_Description"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:drawableLeft="@drawable/ic_notes_black_24dp"
+                    android:drawablePadding="10dp"
+                    android:ems="10"
+                    android:hint="Description"
+                    android:singleLine="false"
+                    android:textSize="@dimen/font_edit_add_more" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <Switch
+                android:id="@+id/switch2"
+                android:layout_width="307dp"
+                android:layout_height="21dp"
+                android:layout_marginTop="10dp"
+                android:ems="10"
+                android:text="Extra/Common Income"
+                android:textSize="@dimen/font_edit_add_more" />
+
+            <Button
+                android:id="@+id/menu2_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="25dp"
+                android:paddingLeft="60dp"
+                android:paddingTop="6dp"
+                android:paddingRight="60dp"
+                android:paddingBottom="6dp"
+                android:text="Done"
+                android:textSize="@dimen/font_edit_add_more" />
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

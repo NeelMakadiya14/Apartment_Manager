@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "866926606078",
+    "firebase_url": "https://apartment-manager-ff9c6.firebaseio.com",
+    "project_id": "apartment-manager-ff9c6",
+    "storage_bucket": "apartment-manager-ff9c6.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:866926606078:android:625a1f5df4bec639",
+        "android_client_info": {
+          "package_name": "com.inc.apartmentmanager"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "866926606078-5a136h522s5c3co2icqaqajqqd1i9apc.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.inc.apartmentmanager",
+            "certificate_hash": "04206db0abee936c0bd6e577af50f94a26cb6c52"
+          }
+        },
+        {
+          "client_id": "866926606078-32f9dbidnv0uvp291smauu01a2h55crg.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDZeP9nByf9M1pwRbpsvegoZXNZojSSsOo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "866926606078-32f9dbidnv0uvp291smauu01a2h55crg.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardCornerRadius="15dp"
+    android:layout_marginTop="10dp"
+    android:clickable="true"
+    android:foreground="?android:attr/selectableItemBackground">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingLeft="5dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Date"
+                    android:drawableLeft="@drawable/calendar_today"
+                    android:drawablePadding="10dp"
+                    android:textSize="@dimen/font_edit_add_more"
+                    android:id="@+id/exoense_transaction_rv_tv1"
+                    android:ems="10"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Type"
+                    android:drawableLeft="@drawable/category"
+                    android:drawablePadding="10dp"
+                    android:textSize="@dimen/font_edit_add_more"
+                    android:id="@+id/exoense_transaction_rv_tv3"
+                    android:ems="10"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="5dp"
+                android:paddingLeft="5dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Person"
+                    android:drawableLeft="@drawable/ic_person_black_24dp"
+                    android:drawablePadding="10dp"
+                    android:textSize="@dimen/font_edit_add_more"
+                    android:id="@+id/exoense_transaction_rv_tv2"
+                    android:ems="10"
+                    android:layout_gravity="end"/>
+
+                <TextView
+                    android:id="@+id/exoense_transaction_rv_tv4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="end"
+                    android:drawableLeft="@drawable/currency_inr"
+                    android:drawablePadding="10dp"
+                    android:text="Amount"
+                    android:textSize="@dimen/font_edit_add_more"
+                    android:ems="10"/>
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Description"
+                android:drawableLeft="@drawable/ic_notes_black_24dp"
+                android:drawablePadding="10dp"
+                android:textSize="@dimen/font_edit_add_more"
+                android:id="@+id/exoense_transaction_rv_tv5"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="5dp"/>
+
+        </LinearLayout>
+
+</androidx.cardview.widget.CardView>

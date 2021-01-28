@@ -1,0 +1,71 @@
+<resources>
+
+    <style name="AppTextField" parent="Widget.Design.TextInputLayout"/>
+
+    <style name="MyTheme_Light" parent="Theme.MaterialComponents.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary_Light</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark_Light</item>
+        <item name="colorAccent">@color/colorAccent_Light</item>
+        <item name="textInputStyle">@style/AppTextField</item>
+    </style>
+
+    <style name="MyTheme_Light.NoActionBar" parent="Theme.MaterialComponents.Light.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="MyTheme_Light_NoActionbar" parent="Theme.MaterialComponents.Light.NoActionBar">
+        <item name="colorPrimary">@color/colorPrimary_Light</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark_Light</item>
+        <item name="colorAccent">@color/colorAccent_Light</item>
+        <item name="textInputStyle">@style/AppTextField</item>
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+
+    <style name="MyActionBar" parent="Widget.MaterialComponents.ActionBar.Solid">
+        <item name="background">@android:color/transparent</item>
+    </style>
+
+    <style name="MyTheme_Dark" parent="Theme.MaterialComponents">
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="textInputStyle">@style/AppTextField</item>
+        <item name="actionBarStyle">@style/MyActionBar</item>
+    </style>
+
+
+    <style name="MyTheme_Dark.NoActionBar" parent="Theme.MaterialComponents.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="MyTheme_Dark_NoActionbar" parent="Theme.MaterialComponents.NoActionBar">
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="textInputStyle">@style/AppTextField</item>
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+
+
+    <style name="MyTheme.AppBarOverlay" parent="Theme.MaterialComponents">
+      <!--  <item name="colorBackgroundFloating">@color/colorAccent</item>
+        <item name="android:background">@color/actionbarColor</item>-->
+    </style>
+
+    <style name="MyTheme.PopupOverlay" parent="Theme.MaterialComponents"/>
+
+    <style name="ToolbarColored" parent="MyTheme_Dark">
+        <item name="android:textColorSecondary">@color/mainActionbar</item>
+        <item name="android:textColorPrimary">@color/mainActionbar</item>
+    </style>
+
+
+
+</resources>

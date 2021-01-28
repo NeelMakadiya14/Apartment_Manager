@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:dist="http://schemas.android.com/apk/distribution"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.inc.apartmentmanager">
+
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+
+    <dist:module dist:instant="true" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/MyTheme_Light">
+        <activity android:name=".View_Transaction"
+            android:label="View All Transaction"
+            android:parentActivityName=".MainActivity"></activity>
+        <activity
+            android:name=".BalanceSheet"
+            android:label="Balance Sheet"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".view_owner_detail"
+            android:label="Owner Detail"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".add"
+            android:label="Add Expense/Deposit"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".add_owner_detail"
+            android:label="@string/menu_add_owner"
+            android:parentActivityName=".MainActivity" />
+        <activity android:name=".admin" />
+        <activity android:name=".sign" />
+        <activity android:name=".Splash">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/app_name" />
+
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
+    </application>
+
+</manifest>
